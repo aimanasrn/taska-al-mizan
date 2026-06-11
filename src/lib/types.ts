@@ -24,6 +24,9 @@ export type GalleryItem = {
   category: LocalizedText;
   description: LocalizedText;
   tone: 'teal' | 'yellow' | 'pink' | 'mint';
+  imageSrc?: string;
+  imageAlt?: LocalizedText;
+  objectPosition?: string;
 };
 
 export type Testimonial = {

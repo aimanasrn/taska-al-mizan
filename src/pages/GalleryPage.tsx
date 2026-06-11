@@ -20,6 +20,9 @@ export default function GalleryPage() {
             key={`${item.title.en}-${index}`}
             badge={item.category[language]}
             description={item.description[language]}
+            imageAlt={item.imageAlt?.[language]}
+            imageSrc={item.imageSrc}
+            objectPosition={item.objectPosition}
             title={item.title[language]}
             tone={item.tone}
           />

@@ -36,6 +36,7 @@ export const homeHero = {
     bm: 'Ruang ceria untuk kanak-kanak bermain dan belajar',
     en: 'A cheerful space for children to play and learn',
   },
+  imageSrc: '/images/hero-classroom.png',
 };
 
 export const aboutPreview = {
@@ -219,6 +220,12 @@ export const homeGalleryPreview: GalleryItem[] = [
       en: 'A bright, tidy space designed for daily activities.',
     },
     tone: 'teal',
+    imageSrc: '/images/gallery-scenes.png',
+    imageAlt: {
+      bm: 'Kanak-kanak dan guru di ruang pembelajaran ceria',
+      en: 'Children and teacher in a cheerful learning space',
+    },
+    objectPosition: 'left center',
   },
   {
     title: { bm: 'Aktiviti Berkumpulan', en: 'Group Activities' },
@@ -228,6 +235,12 @@ export const homeGalleryPreview: GalleryItem[] = [
       en: 'Shared moments that support social development.',
     },
     tone: 'yellow',
+    imageSrc: '/images/gallery-scenes.png',
+    imageAlt: {
+      bm: 'Aktiviti berkumpulan yang menyeronokkan di taska',
+      en: 'Fun group activities at the childcare centre',
+    },
+    objectPosition: 'right bottom',
   },
   {
     title: { bm: 'Waktu Makan Selesa', en: 'Comfortable Meal Time' },
@@ -237,6 +250,12 @@ export const homeGalleryPreview: GalleryItem[] = [
       en: 'A mealtime routine that feels orderly and reassuring.',
     },
     tone: 'pink',
+    imageSrc: '/images/gallery-scenes.png',
+    imageAlt: {
+      bm: 'Kanak-kanak menikmati waktu makan di taska',
+      en: 'Children enjoying mealtime at the childcare centre',
+    },
+    objectPosition: 'left bottom',
   },
   {
     title: { bm: 'Main & Teroka', en: 'Play & Explore' },
@@ -246,6 +265,12 @@ export const homeGalleryPreview: GalleryItem[] = [
       en: 'A playful zone that supports safe exploration.',
     },
     tone: 'mint',
+    imageSrc: '/images/gallery-scenes.png',
+    imageAlt: {
+      bm: 'Kanak-kanak bermain bersama guru dalam ruang selamat',
+      en: 'Children playing with their teacher in a safe space',
+    },
+    objectPosition: 'right center',
   },
 ];
 

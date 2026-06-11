@@ -18,6 +18,12 @@ export const galleryPageContent = {
         en: 'A bright, comfortable space for everyday activities.',
       },
       tone: 'teal',
+      imageSrc: '/images/hero-classroom.png',
+      imageAlt: {
+        bm: 'Guru dan kanak-kanak di ruang kelas yang ceria',
+        en: 'Teacher and children in a cheerful classroom',
+      },
+      objectPosition: 'center',
     },
     {
       title: { bm: 'Aktiviti Pembelajaran', en: 'Learning Activities' },
@@ -27,6 +33,12 @@ export const galleryPageContent = {
         en: 'Early learning through play and interaction.',
       },
       tone: 'yellow',
+      imageSrc: '/images/gallery-scenes.png',
+      imageAlt: {
+        bm: 'Kanak-kanak melakukan aktiviti pembelajaran awal',
+        en: 'Children doing early learning activities',
+      },
+      objectPosition: 'right top',
     },
     {
       title: { bm: 'Waktu Makan', en: 'Meal Time' },
@@ -36,6 +48,12 @@ export const galleryPageContent = {
         en: 'An orderly, reassuring mealtime routine.',
       },
       tone: 'pink',
+      imageSrc: '/images/gallery-scenes.png',
+      imageAlt: {
+        bm: 'Waktu makan yang selesa untuk kanak-kanak',
+        en: 'A comfortable mealtime for young children',
+      },
+      objectPosition: 'left bottom',
     },
     {
       title: { bm: 'Aktiviti Berkumpulan', en: 'Group Activities' },
@@ -45,6 +63,12 @@ export const galleryPageContent = {
         en: 'Group moments that help children feel confident with peers.',
       },
       tone: 'mint',
+      imageSrc: '/images/gallery-scenes.png',
+      imageAlt: {
+        bm: 'Aktiviti berkumpulan yang membina keyakinan sosial',
+        en: 'Group activities that build social confidence',
+      },
+      objectPosition: 'right bottom',
     },
     {
       title: { bm: 'Acara & Sambutan', en: 'Events & Celebrations' },
@@ -54,6 +78,12 @@ export const galleryPageContent = {
         en: 'A warm way to celebrate joyful milestones and shared moments.',
       },
       tone: 'yellow',
+      imageSrc: '/images/hero-classroom.png',
+      imageAlt: {
+        bm: 'Suasana ceria di taska yang sesuai untuk acara kecil',
+        en: 'A cheerful childcare atmosphere suited for small events',
+      },
+      objectPosition: 'left center',
     },
     {
       title: { bm: 'Aktiviti Kreatif', en: 'Creative Activities' },
@@ -63,6 +93,12 @@ export const galleryPageContent = {
         en: 'Arts, crafts, and imaginative exploration.',
       },
       tone: 'teal',
+      imageSrc: '/images/gallery-scenes.png',
+      imageAlt: {
+        bm: 'Kanak-kanak meneroka aktiviti kreatif bersama guru',
+        en: 'Children exploring creative activities with their teacher',
+      },
+      objectPosition: 'center top',
     },
   ] satisfies GalleryItem[],
 };

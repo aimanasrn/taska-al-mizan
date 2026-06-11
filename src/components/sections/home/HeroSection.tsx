@@ -55,6 +55,9 @@ export function HeroSection() {
           <ImageCard
             badge={language === 'bm' ? 'Suasana Selamat' : 'Safe Environment'}
             description={homeHero.imageLabel[language]}
+            imageAlt={homeHero.imageLabel[language]}
+            imageSrc={homeHero.imageSrc}
+            objectPosition="center"
             tall
             title={language === 'bm' ? 'Ruang belajar, bermain dan berkembang' : 'A place to learn, play, and grow'}
             tone="teal"

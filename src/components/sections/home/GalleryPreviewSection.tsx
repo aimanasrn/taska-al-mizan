@@ -25,6 +25,9 @@ export function GalleryPreviewSection() {
             key={item.title.en}
             badge={item.category[language]}
             description={item.description[language]}
+            imageAlt={item.imageAlt?.[language]}
+            imageSrc={item.imageSrc}
+            objectPosition={item.objectPosition}
             title={item.title[language]}
             tone={item.tone}
           />

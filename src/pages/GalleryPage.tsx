@@ -14,19 +14,56 @@ export default function GalleryPage() {
         title={galleryPageContent.bannerTitle[language]}
       />
 
-      <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        {galleryPageContent.items.map((item, index) => (
+      <section className="grid gap-8 xl:grid-cols-[0.72fr_1.28fr]">
+        <div className="space-y-6">
+          <div className="rounded-[32px] bg-white/88 p-8 shadow-soft backdrop-blur">
+            <p className="text-sm font-extrabold uppercase tracking-[0.24em] text-brand-teal">
+              {language === 'bm' ? 'Suasana Taska' : 'Taska Atmosphere'}
+            </p>
+            <h2 className="mt-3 font-heading text-4xl font-bold text-brand-ink">
+              {language === 'bm'
+                ? 'Lihat ruang, aktiviti dan momen yang membina keyakinan ibu bapa'
+                : 'See the spaces, activities, and moments that build parent confidence'}
+            </h2>
+            <p className="mt-4 text-base leading-8 text-brand-muted">
+              {language === 'bm'
+                ? 'Galeri ini membantu menunjukkan rasa, ritma, dan suasana harian yang ceria namun tetap teratur.'
+                : 'This gallery gives families a feel for the rhythm, warmth, and calm structure of daily life here.'}
+            </p>
+          </div>
           <ImageCard
-            key={`${item.title.en}-${index}`}
-            badge={item.category[language]}
-            description={item.description[language]}
-            imageAlt={item.imageAlt?.[language]}
-            imageSrc={item.imageSrc}
-            objectPosition={item.objectPosition}
-            title={item.title[language]}
-            tone={item.tone}
+            badge={language === 'bm' ? 'Ruang Ceria' : 'Cheerful Spaces'}
+            description={
+              language === 'bm'
+                ? 'Pencahayaan lembut, warna pastel dan susun atur yang kemas memberi rasa tenang pada ruang.'
+                : 'Soft light, pastel tones, and tidy layouts create a reassuring sense of calm.'
+            }
+            imageAlt={
+              language === 'bm'
+                ? 'Guru dan kanak-kanak di ruang kelas yang ceria'
+                : 'Teacher and children in a cheerful classroom'
+            }
+            imageSrc="/images/hero-classroom.png"
+            objectPosition="center"
+            title={language === 'bm' ? 'Persekitaran yang nampak selamat dan mesra' : 'An environment that feels safe and welcoming'}
+            tone="teal"
           />
-        ))}
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {galleryPageContent.items.map((item, index) => (
+            <ImageCard
+              key={`${item.title.en}-${index}`}
+              badge={item.category[language]}
+              description={item.description[language]}
+              imageAlt={item.imageAlt?.[language]}
+              imageSrc={item.imageSrc}
+              objectPosition={item.objectPosition}
+              title={item.title[language]}
+              tone={item.tone}
+            />
+          ))}
+        </div>
       </section>
 
       <ContactCTA />

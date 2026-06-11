@@ -7,7 +7,7 @@ export function WhyChooseUsSection() {
   const { language } = useLanguage();
 
   return (
-    <section className="py-14">
+    <section className="rounded-[36px] bg-gradient-to-br from-cyan-50 via-white to-emerald-50 px-6 py-14 shadow-soft md:px-8">
       <SectionHeading
         centered
         eyebrow={language === 'bm' ? 'Kenapa Pilih Kami' : 'Why Choose Us'}

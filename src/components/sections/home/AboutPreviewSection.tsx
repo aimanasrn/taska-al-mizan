@@ -14,6 +14,13 @@ export function AboutPreviewSection() {
         <ImageCard
           badge={language === 'bm' ? 'Taska Mesra Keluarga' : 'Family-Friendly Taska'}
           description={aboutPreview.description[language]}
+          imageAlt={
+            language === 'bm'
+              ? 'Kanak-kanak bersama guru dalam suasana taska yang mesra'
+              : 'Children with their teacher in a warm childcare setting'
+          }
+          imageSrc="/images/hero-classroom.png"
+          objectPosition="center"
           title={language === 'bm' ? 'Ruang yang tenang untuk rutin yang ceria' : 'A calm space for cheerful routines'}
           tone="mint"
         />

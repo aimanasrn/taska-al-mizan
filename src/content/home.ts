@@ -220,12 +220,12 @@ export const homeGalleryPreview: GalleryItem[] = [
       en: 'A bright, tidy space designed for daily activities.',
     },
     tone: 'teal',
-    imageSrc: '/images/gallery-scenes.png',
+    imageSrc: '/images/gallery-learning.png',
     imageAlt: {
       bm: 'Kanak-kanak dan guru di ruang pembelajaran ceria',
       en: 'Children and teacher in a cheerful learning space',
     },
-    objectPosition: 'left center',
+    objectPosition: 'center',
   },
   {
     title: { bm: 'Aktiviti Berkumpulan', en: 'Group Activities' },
@@ -235,12 +235,12 @@ export const homeGalleryPreview: GalleryItem[] = [
       en: 'Shared moments that support social development.',
     },
     tone: 'yellow',
-    imageSrc: '/images/gallery-scenes.png',
+    imageSrc: '/images/gallery-group-play.png',
     imageAlt: {
       bm: 'Aktiviti berkumpulan yang menyeronokkan di taska',
       en: 'Fun group activities at the childcare centre',
     },
-    objectPosition: 'right bottom',
+    objectPosition: 'center',
   },
   {
     title: { bm: 'Waktu Makan Selesa', en: 'Comfortable Meal Time' },
@@ -250,12 +250,12 @@ export const homeGalleryPreview: GalleryItem[] = [
       en: 'A mealtime routine that feels orderly and reassuring.',
     },
     tone: 'pink',
-    imageSrc: '/images/gallery-scenes.png',
+    imageSrc: '/images/gallery-mealtime.png',
     imageAlt: {
       bm: 'Kanak-kanak menikmati waktu makan di taska',
       en: 'Children enjoying mealtime at the childcare centre',
     },
-    objectPosition: 'left bottom',
+    objectPosition: 'center',
   },
   {
     title: { bm: 'Main & Teroka', en: 'Play & Explore' },
@@ -265,12 +265,12 @@ export const homeGalleryPreview: GalleryItem[] = [
       en: 'A playful zone that supports safe exploration.',
     },
     tone: 'mint',
-    imageSrc: '/images/gallery-scenes.png',
+    imageSrc: '/images/gallery-creative.png',
     imageAlt: {
-      bm: 'Kanak-kanak bermain bersama guru dalam ruang selamat',
-      en: 'Children playing with their teacher in a safe space',
+      bm: 'Kanak-kanak meneroka aktiviti kreatif dalam ruang selamat',
+      en: 'Children exploring creative activities in a safe space',
     },
-    objectPosition: 'right center',
+    objectPosition: 'center',
   },
 ];
 

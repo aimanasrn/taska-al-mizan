@@ -33,12 +33,12 @@ export const galleryPageContent = {
         en: 'Early learning through play and interaction.',
       },
       tone: 'yellow',
-      imageSrc: '/images/gallery-scenes.png',
+      imageSrc: '/images/gallery-learning.png',
       imageAlt: {
         bm: 'Kanak-kanak melakukan aktiviti pembelajaran awal',
         en: 'Children doing early learning activities',
       },
-      objectPosition: 'right top',
+      objectPosition: 'center',
     },
     {
       title: { bm: 'Waktu Makan', en: 'Meal Time' },
@@ -48,12 +48,12 @@ export const galleryPageContent = {
         en: 'An orderly, reassuring mealtime routine.',
       },
       tone: 'pink',
-      imageSrc: '/images/gallery-scenes.png',
+      imageSrc: '/images/gallery-mealtime.png',
       imageAlt: {
         bm: 'Waktu makan yang selesa untuk kanak-kanak',
         en: 'A comfortable mealtime for young children',
       },
-      objectPosition: 'left bottom',
+      objectPosition: 'center',
     },
     {
       title: { bm: 'Aktiviti Berkumpulan', en: 'Group Activities' },
@@ -63,12 +63,12 @@ export const galleryPageContent = {
         en: 'Group moments that help children feel confident with peers.',
       },
       tone: 'mint',
-      imageSrc: '/images/gallery-scenes.png',
+      imageSrc: '/images/gallery-group-play.png',
       imageAlt: {
         bm: 'Aktiviti berkumpulan yang membina keyakinan sosial',
         en: 'Group activities that build social confidence',
       },
-      objectPosition: 'right bottom',
+      objectPosition: 'center',
     },
     {
       title: { bm: 'Acara & Sambutan', en: 'Events & Celebrations' },
@@ -93,12 +93,12 @@ export const galleryPageContent = {
         en: 'Arts, crafts, and imaginative exploration.',
       },
       tone: 'teal',
-      imageSrc: '/images/gallery-scenes.png',
+      imageSrc: '/images/gallery-creative.png',
       imageAlt: {
         bm: 'Kanak-kanak meneroka aktiviti kreatif bersama guru',
         en: 'Children exploring creative activities with their teacher',
       },
-      objectPosition: 'center top',
+      objectPosition: 'center',
     },
   ] satisfies GalleryItem[],
 };

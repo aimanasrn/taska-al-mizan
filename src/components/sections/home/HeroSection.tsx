@@ -9,36 +9,36 @@ export function HeroSection() {
   const { language } = useLanguage();
 
   return (
-    <section className="py-10 md:py-16">
-      <div className="grid items-center gap-10 md:grid-cols-[1.05fr_0.95fr]">
+    <section className="py-8 md:py-16">
+      <div className="grid items-center gap-8 md:grid-cols-[1.05fr_0.95fr] md:gap-10">
         <motion.div
           animate={{ opacity: 1, y: 0 }}
           className="max-w-2xl"
           initial={{ opacity: 0, y: 16 }}
           transition={{ duration: 0.45 }}
         >
-          <p className="mb-4 text-sm font-extrabold uppercase tracking-[0.24em] text-brand-teal">
+          <p className="mb-4 text-xs font-extrabold uppercase tracking-[0.24em] text-brand-teal sm:text-sm">
             {homeHero.eyebrow[language]}
           </p>
-          <h1 className="font-heading text-5xl font-extrabold leading-[1.02] text-brand-ink md:text-7xl">
+          <h1 className="font-heading text-4xl font-extrabold leading-[1.02] text-brand-ink sm:text-5xl md:text-7xl">
             {homeHero.title[language]}
           </h1>
-          <p className="mt-5 max-w-xl text-lg leading-8 text-brand-muted">
+          <p className="mt-5 max-w-xl text-base leading-7 text-brand-muted sm:text-lg sm:leading-8">
             {homeHero.description[language]}
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <ButtonLink href={siteContent.contact.whatsappHref} variant="primary">
+            <ButtonLink className="w-full sm:w-auto" href={siteContent.contact.whatsappHref} variant="primary">
               {homeHero.primaryCta[language]}
             </ButtonLink>
-            <ButtonLink to="/programs" variant="secondary">
+            <ButtonLink className="w-full sm:w-auto" to="/programs" variant="secondary">
               {homeHero.secondaryCta[language]}
             </ButtonLink>
           </div>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
             {heroHighlights.map((item) => (
               <div
                 key={item.text.en}
-                className="inline-flex items-center gap-3 rounded-full bg-white px-4 py-3 text-sm font-bold text-brand-ink shadow-soft"
+                className="inline-flex items-center gap-3 rounded-full bg-white px-4 py-3 text-sm font-bold text-brand-ink shadow-soft sm:w-auto"
               >
                 <item.icon className="text-brand-teal" size={18} />
                 {item.text[language]}

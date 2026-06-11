@@ -16,7 +16,7 @@ export function MobileNav({ open, onNavigate }: MobileNavProps) {
   }
 
   return (
-    <div className="border-t border-brand-teal/10 bg-white/95 px-6 py-5 md:hidden">
+    <div className="border-t border-brand-teal/10 bg-white/95 px-4 py-5 md:hidden sm:px-6">
       <nav className="flex flex-col gap-3">
         {navItems.map((item) => (
           <NavLink
@@ -30,7 +30,7 @@ export function MobileNav({ open, onNavigate }: MobileNavProps) {
         ))}
       </nav>
       <div className="mt-5">
-        <ButtonLink href={siteContent.contact.whatsappHref} variant="primary">
+        <ButtonLink className="w-full" href={siteContent.contact.whatsappHref} variant="primary">
           {siteContent.header.primaryCta[language]}
         </ButtonLink>
       </div>

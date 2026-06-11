@@ -16,7 +16,7 @@ export function GalleryPreviewSection() {
         description={
           language === 'bm'
             ? 'Ruang, aktiviti, dan suasana yang membantu ibu bapa membayangkan rutin anak mereka.'
-            : 'Spaces, activities, and atmosphere that help parents picture their child’s daily routine.'
+            : "Spaces, activities, and atmosphere that help parents picture their child's daily routine."
         }
       />
       <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -34,7 +34,7 @@ export function GalleryPreviewSection() {
         ))}
       </div>
       <div className="mt-8 text-center">
-        <ButtonLink to="/gallery" variant="secondary">
+        <ButtonLink className="w-full sm:w-auto" to="/gallery" variant="secondary">
           {language === 'bm' ? 'Lihat Galeri' : 'View Gallery'}
         </ButtonLink>
       </div>

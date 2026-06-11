@@ -28,9 +28,9 @@ export function SiteHeader() {
       )}
       role="banner"
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
-        <div>
-          <NavLink className="font-heading text-2xl font-bold text-brand-ink" to="/">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
+        <div className="min-w-0">
+          <NavLink className="block truncate font-heading text-xl font-bold text-brand-ink sm:text-2xl" to="/">
             {siteContent.brand.name}
           </NavLink>
           <p className="hidden text-sm text-brand-muted md:block">
@@ -62,7 +62,7 @@ export function SiteHeader() {
           </ButtonLink>
         </div>
 
-        <div className="flex items-center gap-3 md:hidden">
+        <div className="flex shrink-0 items-center gap-2 md:hidden">
           <LanguageSwitcher />
           <button
             aria-label={open ? siteContent.header.closeMenu[language] : siteContent.header.openMenu[language]}

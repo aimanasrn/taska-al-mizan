@@ -78,7 +78,7 @@ export function ContactForm() {
 
   return (
     <form
-      className="rounded-[32px] bg-white p-7 shadow-soft md:p-9"
+      className="rounded-[32px] bg-white p-6 shadow-soft md:p-9"
       noValidate
       onSubmit={handleSubmit}
     >
@@ -115,7 +115,7 @@ export function ContactForm() {
       </label>
 
       <button
-        className="mt-6 inline-flex items-center justify-center rounded-full bg-brand-teal px-6 py-3 text-sm font-extrabold text-white shadow-soft transition hover:-translate-y-0.5 hover:shadow-float"
+        className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-brand-teal px-6 py-3 text-sm font-extrabold text-white shadow-soft transition hover:-translate-y-0.5 hover:shadow-float sm:w-auto"
         type="submit"
       >
         {contactPageContent.submitLabel[language]}

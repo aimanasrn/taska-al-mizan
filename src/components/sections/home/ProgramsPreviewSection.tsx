@@ -29,12 +29,14 @@ export function ProgramsPreviewSection() {
           </p>
         </div>
       </div>
-      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-2">
         {programPreviewCards.map((item) => (
           <InfoCard
             key={item.title.en}
+            className="min-h-[220px]"
             description={item.description[language]}
             icon={item.icon}
+            layout="row"
             title={item.title[language]}
             tone={item.tone}
           />

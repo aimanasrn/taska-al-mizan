@@ -16,6 +16,7 @@ type ImageCardProps = {
   imageSrc?: string;
   imageAlt?: string;
   objectPosition?: string;
+  className?: string;
 };
 
 export function ImageCard({
@@ -27,12 +28,14 @@ export function ImageCard({
   imageSrc,
   imageAlt,
   objectPosition = 'center',
+  className,
 }: ImageCardProps) {
   return (
     <div
       className={cn(
         'group relative overflow-hidden rounded-[28px] bg-white shadow-soft',
         tall ? 'min-h-[380px]' : 'min-h-[300px]',
+        className,
       )}
     >
       {imageSrc ? (
@@ -59,7 +62,9 @@ export function ImageCard({
           </span>
         ) : null}
         <div className={cn('mt-auto rounded-[24px] p-5 backdrop-blur', imageSrc ? 'bg-white/84' : 'bg-white/78')}>
-          <p className="font-heading text-2xl font-bold text-brand-ink">{title}</p>
+          <p className="font-heading text-xl font-bold leading-tight text-brand-ink md:text-2xl">
+            {title}
+          </p>
           <p className="mt-2 text-sm leading-7 text-brand-muted">{description}</p>
         </div>
       </div>

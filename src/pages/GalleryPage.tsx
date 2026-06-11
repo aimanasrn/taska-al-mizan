@@ -14,13 +14,13 @@ export default function GalleryPage() {
         title={galleryPageContent.bannerTitle[language]}
       />
 
-      <section className="grid gap-8 xl:grid-cols-[0.72fr_1.28fr]">
-        <div className="space-y-6">
+      <section className="space-y-6 xl:space-y-8">
+        <div className="grid items-stretch gap-6 lg:grid-cols-[minmax(0,1.15fr)_360px] xl:grid-cols-[minmax(0,1.2fr)_380px] xl:gap-8">
           <div className="rounded-[32px] bg-white/88 p-8 shadow-soft backdrop-blur">
             <p className="text-sm font-extrabold uppercase tracking-[0.24em] text-brand-teal">
               {language === 'bm' ? 'Suasana Taska' : 'Taska Atmosphere'}
             </p>
-            <h2 className="mt-3 font-heading text-4xl font-bold text-brand-ink">
+            <h2 className="mt-3 font-heading text-3xl font-bold leading-tight text-brand-ink xl:text-4xl">
               {language === 'bm'
                 ? 'Lihat ruang, aktiviti dan momen yang membina keyakinan ibu bapa'
                 : 'See the spaces, activities, and moments that build parent confidence'}
@@ -45,16 +45,18 @@ export default function GalleryPage() {
             }
             imageSrc="/images/hero-classroom.png"
             objectPosition="center"
+            className="min-h-[280px] lg:min-h-full"
             title={language === 'bm' ? 'Persekitaran yang nampak selamat dan mesra' : 'An environment that feels safe and welcoming'}
             tone="teal"
           />
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="flex flex-wrap gap-5">
           {galleryPageContent.items.map((item, index) => (
             <ImageCard
               key={`${item.title.en}-${index}`}
               badge={item.category[language]}
+              className="min-h-[300px] w-full md:w-[calc(50%-10px)]"
               description={item.description[language]}
               imageAlt={item.imageAlt?.[language]}
               imageSrc={item.imageSrc}

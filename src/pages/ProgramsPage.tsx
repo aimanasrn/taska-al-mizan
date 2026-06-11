@@ -15,13 +15,13 @@ export default function ProgramsPage() {
         title={programsPageContent.bannerTitle[language]}
       />
 
-      <section className="grid gap-8 xl:grid-cols-[0.78fr_1.22fr]">
-        <div className="space-y-6">
+      <section className="space-y-6 xl:space-y-8">
+        <div className="grid items-stretch gap-6 lg:grid-cols-[minmax(0,1.15fr)_360px] xl:grid-cols-[minmax(0,1.2fr)_380px] xl:gap-8">
           <div className="rounded-[32px] bg-white/88 p-8 shadow-soft backdrop-blur">
             <p className="text-sm font-extrabold uppercase tracking-[0.24em] text-brand-teal">
               {language === 'bm' ? 'Gambaran Program' : 'Program Snapshot'}
             </p>
-            <h2 className="mt-3 font-heading text-4xl font-bold text-brand-ink">
+            <h2 className="mt-3 font-heading text-3xl font-bold leading-tight text-brand-ink xl:text-4xl">
               {language === 'bm'
                 ? 'Pilihan penjagaan yang jelas, lembut dan meyakinkan'
                 : 'Care options that feel clear, gentle, and reassuring'}
@@ -32,6 +32,7 @@ export default function ProgramsPage() {
                 : 'From early learning to balanced daily routines, each program is shaped around the needs of young families.'}
             </p>
           </div>
+
           <ImageCard
             badge={language === 'bm' ? 'Aktiviti Harian' : 'Daily Learning'}
             description={
@@ -46,17 +47,20 @@ export default function ProgramsPage() {
             }
             imageSrc="/images/gallery-learning.png"
             objectPosition="center"
+            className="min-h-[280px] lg:min-h-full"
             title={language === 'bm' ? 'Belajar sambil berasa selesa' : 'Learning while feeling at ease'}
             tone="yellow"
           />
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="flex flex-wrap gap-5">
           {programsPageContent.programs.map((program) => (
             <InfoCard
               key={program.title.en}
+              className="min-h-[unset] w-full px-7 py-6 md:w-[calc(50%-10px)] lg:px-8"
               description={program.description[language]}
               icon={program.icon}
+              layout="row"
               title={program.title[language]}
               tone={program.tone}
             />

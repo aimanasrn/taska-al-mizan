@@ -19,11 +19,12 @@ export function GalleryPreviewSection() {
             : "Spaces, activities, and atmosphere that help parents picture their child's daily routine."
         }
       />
-      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-        {homeGalleryPreview.map((item) => (
+      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-2">
+        {homeGalleryPreview.map((item, index) => (
           <ImageCard
             key={item.title.en}
             badge={item.category[language]}
+            className={index === 0 ? 'xl:col-span-2 xl:min-h-[340px]' : 'xl:min-h-[320px]'}
             description={item.description[language]}
             imageAlt={item.imageAlt?.[language]}
             imageSrc={item.imageSrc}

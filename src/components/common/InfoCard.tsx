@@ -20,6 +20,8 @@ type InfoCardProps = {
   title: string;
   description: string;
   tone?: keyof typeof toneClasses;
+  className?: string;
+  layout?: 'stacked' | 'row';
 };
 
 export function InfoCard({
@@ -27,25 +29,35 @@ export function InfoCard({
   title,
   description,
   tone = 'teal',
+  className,
+  layout = 'stacked',
 }: InfoCardProps) {
   return (
     <article
       className={cn(
         'rounded-[28px] border p-7 shadow-soft transition duration-200 hover:-translate-y-1 hover:shadow-float',
         toneClasses[tone],
+        className,
       )}
     >
-      <div
-        className={cn(
-          'mb-5 inline-flex rounded-2xl p-3 shadow-sm ring-4 ring-white/60',
-          iconToneClasses[tone],
-        )}
-      >
-        <Icon size={24} />
+      <div className={cn(layout === 'row' && 'flex items-start gap-5')}>
+        <div
+          className={cn(
+            'inline-flex rounded-2xl p-3 shadow-sm ring-4 ring-white/60',
+            iconToneClasses[tone],
+            layout === 'row' ? 'shrink-0' : 'mb-5',
+          )}
+        >
+          <Icon size={24} />
+        </div>
+        <div className="min-w-0">
+          <h3 className="font-heading text-xl font-bold leading-tight text-brand-ink md:text-2xl">
+            {title}
+          </h3>
+          <p className="mt-3 text-sm leading-7 text-brand-muted">{description}</p>
+          <div className="mt-5 h-1.5 w-16 rounded-full bg-white/80" />
+        </div>
       </div>
-      <h3 className="font-heading text-2xl font-bold text-brand-ink">{title}</h3>
-      <p className="mt-3 text-sm leading-7 text-brand-muted">{description}</p>
-      <div className="mt-5 h-1.5 w-16 rounded-full bg-white/80" />
     </article>
   );
 }
